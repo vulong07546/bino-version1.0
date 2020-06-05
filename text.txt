@@ -1,0 +1,18 @@
+* màu sắc
+    màu trắng : #fff
+    màu cam : rgb(231, 76, 60);
+    màu chữ xám : rgb(121, 121, 121);
+    màu nền xám nhạt : rgb(244, 245, 249);
+    màu nền xám đậm : #999999
+
+* khung
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }

@@ -1,0 +1,76 @@
+
+.flex-box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    
+    background-image: url(../pictures/homebg.jpg);
+    height: 991px;
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+    position: relative;
+    
+
+    @extend .flex-box-center;
+    flex-direction: column;
+    .home{
+        max-width: 1000px;
+        .home-main {
+            @extend .flex-box-center;
+            flex-direction: column;
+        }
+        
+        h3, h1, p {
+            text-align: center;
+            color: white;
+        }
+        p{ 
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+        h1{ 
+            font-size: 4rem;
+            margin-bottom: 4rem;
+        }
+        h3{ 
+            font-size: 1.3rem;
+        }
+        .home_btn {
+            margin-top: 2rem;
+            text-align: center;
+            
+            a {
+                display: inline-block;
+                width: 14rem;
+                padding-top: 0.5rem ;
+                padding-bottom: 0.5rem ;
+                border-radius: 5px;
+                border: 1px solid white;
+                color: white;
+                &:hover,
+                &:active {
+                    background-color: rgb(231, 76, 60);
+                }
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .scrooldown {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: yellowgreen;
+        border-radius: 50%;
+        position: absolute;
+        left: 49.5%;
+        bottom: -2%;
+    }
+}
+

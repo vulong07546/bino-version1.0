@@ -1,0 +1,54 @@
+.flex-box-arount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#portfolio {
+    .portfolio {
+        max-width: 1000px;
+        color: rgb(121, 121, 121);
+        margin: 0 auto;
+        
+        height: 30rem;
+        @extend .flex-box-center;
+        flex-direction: column;
+        .separator {
+            position: relative;
+            left: 50%;
+        }
+        .portfolio-main {
+            text-align: center;
+            p {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+        .portfolio-menu {
+            margin-top: 10rem;
+            li {
+                display: inline-block;
+                margin-right: 2rem;
+                margin-top: 1rem;
+                
+                a:after {
+                    content: "/";
+                    position: relative;
+                    left: 1rem;
+                }
+
+                &:last-child a:after{
+                    content: "";
+                }
+            }
+            
+            ul{
+                @extend .flex-box-center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+            
+        }
+    }
+}
